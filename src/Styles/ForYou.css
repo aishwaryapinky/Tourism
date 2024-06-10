@@ -1,0 +1,114 @@
+/* src/Styles/ForYou.css */
+.foryou-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .foryou-container h1 {
+    text-align: center;
+    color: #ff4500;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #ffa07a;
+    font-size: 2.5em;
+  }
+  
+  .foryou-container .recommendations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .foryou-container .recommendation {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .foryou-container .recommendation:hover {
+    transform: translateY(-10px);
+  }
+  
+  .foryou-container .recommendation img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .foryou-container .recommendation h2 {
+    color: #ff4500;
+    text-shadow: 1px 1px #ffa07a;
+    font-size: 1.8em;
+    margin: 10px 0;
+  }
+  
+  .foryou-container .recommendation p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Custom scrollbar */
+  .foryou-container {
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-right: 10px; /* Space for scrollbar */
+  }
+  
+  .foryou-container::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .foryou-container::-webkit-scrollbar-thumb {
+    background: #ff4500;
+    border-radius: 10px;
+    border: 3px solid #f0f8ff;
+  }
+  
+  .foryou-container::-webkit-scrollbar-thumb:hover {
+    background: #ffa07a;
+  }
+  
+  .foryou-container::-webkit-scrollbar-track {
+    background: #f0f8ff;
+    border-radius: 10px;
+  }
+  
+  /* Ensure the navbar is unaffected */
+  .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: #4b0082;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  @media (max-width: 480px) {
+    .recommendation {
+      flex: 1 1 100%;
+    }
+  
+    .foryou-container h1 {
+      font-size: 1.5em;
+    }
+  
+    .recommendation h2 {
+      font-size: 1em;
+    }
+  
+    .recommendation p {
+      font-size: 0.8em;
+    }
+  }
+  

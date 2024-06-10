@@ -1,0 +1,102 @@
+
+/* src/Styles/About.css */
+.about-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Lobster', cursive;
+  }
+  
+  .about-container h1 {
+    text-align: center;
+    color: #4b0082;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #dda0dd;
+    font-size: 2.5em;
+  }
+  
+  .about-container h2 {
+    color: #4b0082;
+    text-shadow: 1px 1px #dda0dd;
+    font-size: 2em;
+    margin-top: 20px;
+  }
+  
+  .about-container p, .about-container ul {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .about-container ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  
+  .about-container ul li {
+    margin-bottom: 10px;
+    text-shadow: 1px 1px #ccc;
+  }
+  
+  .about-container {
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-right: 10px; /* Space for scrollbar */
+  }
+  
+  /* Custom scrollbar */
+  .about-container::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .about-container::-webkit-scrollbar-thumb {
+    background: #4b0082;
+    border-radius: 10px;
+    border: 3px solid #f0f8ff;
+  }
+  
+  .about-container::-webkit-scrollbar-thumb:hover {
+    background: #dda0dd;
+  }
+  
+  .about-container::-webkit-scrollbar-track {
+    background: #f0f8ff;
+    border-radius: 10px;
+  }
+  
+  /* Ensure the navbar is unaffected */
+  .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: #4b0082;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  @media (max-width: 768px) {
+    .about-container {
+      font-size: 0.9em;
+      padding: 10px;
+    }
+  
+    .about-container h1, .about-container h2 {
+      font-size: 1.5em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-container {
+      font-size: 0.8em;
+    }
+  
+    .about-container h1, .about-container h2 {
+      font-size: 1.2em;
+    }
+  }
+  

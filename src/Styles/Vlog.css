@@ -1,0 +1,105 @@
+/* src/Styles/Vlog.css */
+.vlog-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fffacd;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Lobster', cursive;
+  }
+  
+  .vlog-container h1 {
+    text-align: center;
+    color: #ff6347;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #ffa07a;
+    font-size: 2.5em;
+  }
+  
+  .vlog-container h2 {
+    color: #ff6347;
+    text-shadow: 1px 1px #ffa07a;
+    font-size: 2em;
+    margin-top: 20px;
+  }
+  
+  .vlog-container p, .vlog-container ul {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .vlog-container ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  
+  .vlog-container ul li {
+    margin-bottom: 10px;
+    text-shadow: 1px 1px #ccc;
+  }
+  
+  .vlog-container {
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-right: 10px; /* Space for scrollbar */
+  }
+  
+  /* Custom scrollbar */
+  .vlog-container::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .vlog-container::-webkit-scrollbar-thumb {
+    background: #ff6347;
+    border-radius: 10px;
+    border: 3px solid #fffacd;
+  }
+  
+  .vlog-container::-webkit-scrollbar-thumb:hover {
+    background: #ffa07a;
+  }
+  
+  .vlog-container::-webkit-scrollbar-track {
+    background: #fffacd;
+    border-radius: 10px;
+  }
+  
+  /* Ensure the navbar is unaffected */
+  .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: #4b0082;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  @media (max-width: 480px) {
+    .vlog-container h1 {
+      font-size: 1.5em;
+    }
+  
+    .vlog-preview h2 {
+      font-size: 1em;
+    }
+  
+    .vlog-preview p {
+      font-size: 0.8em;
+    }
+  
+    .vlog-details h2 {
+      font-size: 1.2em;
+    }
+  
+    .vlog-details p {
+      font-size: 0.9em;
+    }
+    .vlog-details button {
+        padding: 8px 16px;
+      }
+    }
+  

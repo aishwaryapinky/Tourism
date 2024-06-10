@@ -1,0 +1,64 @@
+/* src/components/Services.css */
+.services-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .services-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .services-container p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .service-item {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-item h2 {
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .service-item p {
+    color: #666;
+    line-height: 1.6;
+  }
+  @media (max-width: 480px) {
+    .services-container h1 {
+      font-size: 1.5em;
+    }
+  
+    .services-container p {
+      font-size: 1em;
+    }
+  
+    .service-item h2 {
+      font-size: 1em;
+    }
+  
+    .service-item p {
+      font-size: 0.8em;
+    }
+  }
+  
